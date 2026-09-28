@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYKY DSGN | Pemesanan Desain</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+header{
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #222;
+    position:sticky;
+    top:0;
+    background:#0a0a0a;
+    z-index:10;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#ff3030;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero span{
+    color:#ff3030;
+}
+
+.hero p{
+    color:#aaa;
+    margin:15px 0 25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff3030;
+    color:white;
+    padding:13px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.title h2{
+    font-size:30px;
+}
+
+.title p{
+    color:#999;
+    margin-top:8px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#121212;
+    border:1px solid #292929;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ff3030;
+}
+
+.card h3{
+    margin:12px 0;
+}
+
+.card p{
+    color:#aaa;
+    font-size:14px;
+}
+
+.price{
+    color:#ff3030;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.order{
+    max-width:700px;
+    margin:auto;
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #292929;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:13px;
+    margin:8px 0 15px;
+    background:#080808;
+    border:1px solid #333;
+    border-radius:7px;
+    color:white;
+    outline:none;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+label{
+    font-size:14px;
+    color:#ddd;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #222;
+    color:#777;
+}
+
+footer b{
+    color:#ff3030;
+}
+
+@media(max-width:600px){
+    .hero h1{
+        font-size:34px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    section{
+        padding:45px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">KYKY DSGN</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#pesan">Pesan</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>WELCOME TO <span>KYKY DSGN</span></h1>
+    <p>Jasa desain kreatif untuk kebutuhan personal, bisnis, gaming dan lainnya.</p>
+
+    <a href="#pesan" class="btn">Pesan Sekarang</a>
+</section>
+
+<section id="layanan">
+
+    <div class="title">
+        <h2>Layanan Desain</h2>
+        <p>Pilih desain yang kamu butuhkan</p>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🎨 Logo</h3>
+            <p>Logo bisnis, komunitas, gaming, server dan personal.</p>
+            <div class="price">Mulai Rp20.000</div>
+        </div>
+
+        <div class="card">
+            <h3>🖼️ Poster</h3>
+            <p>Poster event, promosi, pengumuman dan kebutuhan lainnya.</p>
+            <div class="price">Mulai Rp15.000</div>
+        </div>
+
+        <div class="card">
+            <h3>👕 Clothing</h3>
+            <p>Desain kaos, hoodie, jersey dan merchandise.</p>
+            <div class="price">Mulai Rp25.000</div>
+        </div>
+
+        <div class="card">
+            <h3>🎮 Gaming</h3>
+            <p>Logo squad, banner, thumbnail dan kebutuhan gaming.</p>
+            <div class="price">Mulai Rp20.000</div>
+        </div>
+
+        <div class="card">
+            <h3>📱 Sosial Media</h3>
+            <p>Desain feed, story, banner dan konten media sosial.</p>
+            <div class="price">Mulai Rp15.000</div>
+        </div>
+
+        <div class="card">
+            <h3>✨ Custom</h3>
+            <p>Desain sesuai konsep dan request pelanggan.</p>
+            <div class="price">Negosiasi</div>
+        </div>
+
+    </div>
+</section>
+
+<section id="pesan">
+
+    <div class="title">
+        <h2>Form Pemesanan</h2>
+        <p>Isi data berikut untuk melakukan pemesanan</p>
+    </div>
+
+    <div class="order">
+
+        <label>Nama</label>
+        <input type="text" id="nama" placeholder="Masukkan nama">
+
+        <label>Jenis Desain</label>
+        <select id="desain">
+            <option value="">-- Pilih Desain --</option>
+            <option>Logo</option>
+            <option>Poster</option>
+            <option>Clothing</option>
+            <option>Gaming</option>
+            <option>Sosial Media</option>
+            <option>Custom</option>
+        </select>
+
+        <label>Paket</label>
+        <select id="paket">
+            <option value="">-- Pilih Paket --</option>
+            <option>Basic</option>
+            <option>Premium</option>
+            <option>Custom / Negosiasi</option>
+        </select>
+
+        <label>Detail Pesanan</label>
+        <textarea id="detail"
+        placeholder="Jelaskan konsep desain yang kamu inginkan..."></textarea>
+
+        <label>Deadline</label>
+        <input type="date" id="deadline">
+
+        <button class="btn" type="button" onclick="buatPesanan()">
+            Kirim Pesanan
+        </button>
+
+        <a id="whatsappLink"
+           href="#"
+           style="display:none;">
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 <b>KYKY DSGN</b> — Creative Design Service
+</footer>
+
+<script>
+
+function buatPesanan(){
+
+    const nama = document.getElementById("nama").value.trim();
+    const desain = document.getElementById("desain").value;
+    const paket = document.getElementById("paket").value;
+    const detail = document.getElementById("detail").value.trim();
+    const deadline = document.getElementById("deadline").value;
+
+    if(
+        nama === "" ||
+        desain === "" ||
+        paket === "" ||
+        detail === ""
+    ){
+        alert("Silakan lengkapi semua data pesanan terlebih dahulu!");
+        return;
+    }
+
+    const nomor = "62881027258389";
+
+    const deadlineText =
+        deadline !== ""
+        ? deadline
+        : "Belum ditentukan";
+
+    const pesan =
+        "Halo KYKY DSGN!\n\n" +
+        "*PEMESANAN DESAIN*\n" +
+        "━━━━━━━━━━━━━━\n" +
+        "Nama: " + nama + "\n" +
+        "Desain: " + desain + "\n" +
+        "Paket: " + paket + "\n" +
+        "Deadline: " + deadlineText + "\n\n" +
+        "Detail:\n" +
+        detail + "\n\n" +
+        "Saya ingin memesan desain tersebut.";
+
+    const link =
+        "https://wa.me/" +
+        nomor +
+        "?text=" +
+        encodeURIComponent(pesan);
+
+    /*
+       Buat elemen <a> secara langsung.
+       Ini lebih kompatibel dengan browser Android
+       dibanding window.open().
+    */
+
+    const a = document.createElement("a");
+
+    a.href = link;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+</script>
+
+</body>
+  </html>
